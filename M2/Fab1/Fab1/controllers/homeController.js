@@ -10,7 +10,7 @@
             //res.render("index", { title: "Express and Vash" });
 
             data.getNoteCategories(function (err, results) {
-                res.render("index", { title: "Fabian Express Vash Solution with Data", error: err, categories: results });
+                res.render("index", { title: "Managing my Time -- by @fabianwilliams", error: err, categories: results });
             });
 
         });

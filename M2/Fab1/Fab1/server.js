@@ -7,6 +7,9 @@ var controllers = require("./controllers");
 //SEt up View Engine
 app.set("view engine", "vash");
 
+//set publich static routes
+app.use(express.static(__dirname + "/public"));
+
 //Map Routes using Controllers rather than rubbishing up this page
 controllers.init(app);
 
